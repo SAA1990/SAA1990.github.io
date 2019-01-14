@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Доставка букетов из самых лучших роз">
+    <meta name="author" content="">
+    
+    <link rel="icon" href="../../../../favicon.ico">
+	<title>Флористический салон</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic" rel="stylesheet">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/sweetalert2.min.css" rel="stylesheet" type="text/css"></link>
+    <link href="./css/style.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+</head>
+
+<body>
+
+	<nav class="navbar navbar-expand-md navbar-dark fixed-top">
+		<div class="container">
+			<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<a class="phonemb form-inline mt-2 mt-md-0" href="tel:+7хххххххххх">+7 (ххх) ххх-хх-хх</a>
+			<div class="navbar-collapse collapse" id="navbarCollapse" style="">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="#block2">Магазин</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#block3">Преимущества</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#block4">Контакты</a>
+					</li>
+				</ul>
+				<a class="phone form-inline mt-2 mt-md-0" href="tel:+7хххххххххх">+7 (ххх) ххх-хх-хх</a>
+			</div>
+		</div>
+	</nav>
+
+	<main>
+		<section id="block1" class="py-0 overflow-hidden text-center block1">
+			<div class="overflow"></div>
+			<div class="container">
+				<div class="row">
+                    <div class="col-lg-12 firstblk">
+                        <h1 class="text-white">ДОСТАВКА БУКЕТОВ<br />ИЗ СВЕЖИХ РОЗ</h1>
+                        <p class="mb-5 fs-lg-1 text-white">Выберите авторский букет или свяжитесь с нами и мы изготовим букет по Вашим пожеланиям!</p>
+                        <div class="row justify-content-center">
+                            <div class="col-auto">
+                                <a class="btn btn-lg firstbtn" href="#block2">Купить букет</a>
+
+                                <div style="margin-top: 40px;" class="t-cover__arrow-wrapper t-cover__arrow-wrapper_animated"><div class="t-cover__arrow_mobile"><svg class="t-cover__arrow-svg" style="fill:#ffffff;" x="0px" y="0px" width="38.417px" height="18.592px" viewBox="0 0 38.417 18.592"><g><path d="M19.208,18.592c-0.241,0-0.483-0.087-0.673-0.261L0.327,1.74c-0.408-0.372-0.438-1.004-0.066-1.413c0.372-0.409,1.004-0.439,1.413-0.066L19.208,16.24L36.743,0.261c0.411-0.372,1.042-0.342,1.413,0.066c0.372,0.408,0.343,1.041-0.065,1.413L19.881,18.332C19.691,18.505,19.449,18.592,19.208,18.592z"></path></g></svg></div></div>
+
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+			</div>
+		</section>
+
+		<section id="block2" class="block2">
+			<div class="container">
+				<div class="row" >
+                    <div class="col-lg-12">
+                        <h2 class="text-center">Мы создаем уникальные букеты на любой случай</h2>
+                    </div>
+				</div>
+
+				<div class="row margin" style="margin:0px">
+                    <div class="col-12 col-md-4 col-lg-4 order-2 text-center prod">
+                    	<img src="./img/rose2.png" alt="101 roses" class="img-fluid" />
+						<form id="red" class="text-left">
+							<h3 class="mt-0">Красная роза</h3>
+							<input class="tinkoffPayRow" type="hidden" name="TerminalKey" value="TinkoffBankTest">
+							<input class="tinkoffPayRow" type="hidden" name="Orderid" value="">
+							<div class="form-group row">
+							    <label for="description" class="col-sm-4 col-form-label">Описание</label>
+							    <div class="col-sm-8">
+							      <input type="text" class="form-control description" id="description" value="Свежие красные розы" readonly>
+							    </div>
+							</div>
+							<div class="form-group row">
+							    <label for="amount" class="col-sm-4 col-form-label">Кол-во</label>
+							    <div class="col-sm-8">
+							      	<select class="form-control amount" id="amount" style="max-width: 70px;">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+								    </select>
+							    </div>
+							</div>
+
+							<div class="form-group row">
+							    <label for="receipt" class="col-sm-4 col-form-label">Стоимость</label>
+							    <div class="col-sm-8">
+							      <input type="text" class="form-control receipt" id="receipt" data-value="150" value="150 р." readonly>
+							    </div>
+							</div>
+							
+							<button type="submit" class="btn btn-primary addprod">Добавить</button>
+						</form>
+                    </div>
+				
+					<div class="col-12 col-md-4 col-lg-4 order-2 order-sm-1 text-center prod">
+						<img src="./img/rose1.png" alt="101 roses" class="img-fluid" />
+						<form id="red2" class="text-left">
+							<h3 class="mt-0">Белая роза</h3>
+							<input class="tinkoffPayRow" type="hidden" name="TerminalKey" value="TinkoffBankTest">
+							<input class="tinkoffPayRow" type="hidden" name="Orderid" value="">
+							<div class="form-group row">
+							    <label for="description" class="col-sm-4 col-form-label">Описание</label>
+							    <div class="col-sm-8">
+							      <input type="text" class="form-control description" id="description" value="Свежие белые розы" readonly>
+							    </div>
+							</div>
+							<div class="form-group row">
+							    <label for="amount" class="col-sm-4 col-form-label">Кол-во</label>
+							    <div class="col-sm-8">
+							      	<select class="form-control amount" id="amount" style="max-width: 70px;">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+								    </select>
+							    </div>
+							</div>
+							<div class="form-group row">
+							    <label for="receipt" class="col-sm-4 col-form-label">Стоимость</label>
+							    <div class="col-sm-8">
+							      <input type="text" class="form-control receipt" id="receipt" data-value="200" value="200 р." readonly>
+							    </div>
+							</div>
+							
+							<button type="submit" class="btn btn-primary addprod">Добавить</button>
+						</form>
+					</div>
+				
+					<div class="col-12 col-md-4 col-lg-4 text-center prod">
+						<img src="./img/rose3.png" alt="101 roses" class="img-fluid" />
+						<form id="red3" class="text-left">
+							<h3 class="mt-0">Розовая роза</h3>
+							<input class="tinkoffPayRow" type="hidden" name="TerminalKey" value="TinkoffBankTest">
+							<input class="tinkoffPayRow" type="hidden" name="Orderid" value="">
+							<div class="form-group row">
+							    <label for="description" class="col-sm-4 col-form-label">Описание</label>
+							    <div class="col-sm-8">
+							      <input type="text" class="form-control description" id="description" value="Свежие розовые розы" readonly>
+							    </div>
+							</div>
+							<div class="form-group row">
+							    <label for="amount" class="col-sm-4 col-form-label">Кол-во</label>
+							    <div class="col-sm-8">
+							      	<select class="form-control amount" id="amount" style="max-width: 70px;">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+								    </select>
+							    </div>
+							</div>
+							<div class="form-group row">
+							    <label for="receipt" class="col-sm-4 col-form-label">Стоимость</label>
+							    <div class="col-sm-8">
+							      <input type="text" class="form-control receipt" id="receipt" data-value="300" value="300 р." readonly>
+							    </div>
+							</div>
+							
+							<button type="submit" class="btn btn-primary addprod">Добавить</button>
+						</form>
+                    </div>
+              	</div>
+
+              	<div class="row" >
+                    <div class="col-lg-12 text-center">
+                        <button type="submit" class="btn btn-primary secondbtn">Оплатить</button>
+                    </div>
+				</div>
+			</div>
+		</section>
+
+		<section id="block3" class="block3">
+			<div class="container">
+				<div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="text-center">Наши преимущества<span style="color:transparent;font-size: 1.8px;">pokerdom играть</span></h2>
+                    </div>
+                    <div class="col-lg-12">
+                        <p class="text-center" style="font-size: 20px;margin-bottom: 10%;">Каждый день мы создаем и экспериментируем,<br /> чтобы сделать наших клиентов счастливыми <span style="color:transparent;font-size: 1.8px;">pokerdom зеркало</span></p>
+                    </div>
+
+                    <div class="col-12 col-md-4 col-lg-4">
+                    	<div class="num">1</div>
+                    	<div>
+							<h3 class="mt-0">Всегда отборные цветы</h3>
+							<p style="margin:0px;">Наши букеты будут вас радовать как минимум полторы недели<span style="color:transparent;font-size: 1.8px;">pokerdom онлайн</span></p>
+						</div>
+                    </div>
+
+                    <div class="col-12 col-md-4 col-lg-4">
+                    	<div class="num">2</div>
+                    	<div>
+							<h3 class="mt-0">Быстрая доставка</h3>
+							<p style="margin:0px;">Мы доставляем букеты в течение 3 часов после заказа</p>
+						</div>
+                    </div>
+
+                    <div class="col-12 col-md-4 col-lg-4">
+                    	<div class="num">3</div>
+                    	<div>
+							<h3 class="mt-0">Профессиональные флористы</h3>
+							<p style="margin:0px;">Наши флосты регклярно проходят раздичные курсы</p>
+						</div>
+                    </div>
+
+
+
+				</div>				
+			</div>
+		</section>
+
+
+		<section id="block4" class="block4">
+			<div class="container">
+				<div class="row">
+                    <div class="col-lg-12">
+                    	<div class="wind">
+                    		<a class="phone form-inline mt-2 mt-md-0" href="tel:+7хххххххххх">+7 (ххх) ххх-хх-хх</a>
+                    	</div>
+                    </div>	
+				</div>				
+			</div>
+		</section>
+
+
+	</main>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" ></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<script src="./js/sweetalert2.min.js"></script>
+
+	<script>
+
+	
+
+	function getRandomInRange(min, max) {
+	  return Math.floor(Math.random() * (max - min + 1)) + min;
+	}
+	
+
+	function submitForm(dataOrder) {
+		swal({
+			title: 'Пожалуйста, подождите...',
+			text: '',
+			animation: false,
+			allowOutsideClick: false,
+			showConfirmButton: false
+		});
+
+		$.ajax({
+			url:  "https://securepay.tinkoff.ru/v2/Init",
+			type: "post",
+			contentType: 'application/json',
+			data:  JSON.stringify(dataOrder),
+			dataType: 'json',
+			success: function(data) {
+				if (data['ErrorCode'] == 0) {
+					window.location.replace(data['PaymentURL']);
+				} 
+			}
+		});
+	}
+
+	var order = getRandomInRange(0, 100000);
+	var Orderid = $('input[name=Orderid]').val(order);
+
+	$( ".amount" ).change(function() {
+		var $this = $(this);
+		var receipt = $this.parents('form').find( ".receipt" );
+		var newAmount = parseInt($this.val());
+		var newReceipt = newAmount * parseInt(receipt.attr('data-value'));
+		receipt.val(newReceipt + ' р.');
+	});
+
+	var Basket = (function() {
+		var basket = [];
+
+		return {
+			addToBasket: function(product, number, otherParam) {
+			  basket.push({
+			    product: product,
+			    number: number,
+			    otherParam: otherParam,
+			  });
+			},
+			getBasket: function() {
+		      return basket;
+		    },
+			getRequestBody: function(orderId, terminal, description) {
+			  return {
+			    TerminalKey: terminal,
+			    Amount: parseInt(basket.reduce(function(sum, item) { return sum + item.otherParam }, 0)*100),
+			    OrderId: orderId,
+			    Description: 'Заказ свежих роз',
+			    Receipt: {
+			      Phone: "+79031234567",
+			      Taxation: "osn",		
+			      Items: basket.map(function(item) {
+			      	return {
+			         Name: item.product,
+			         Quantity: 1.00,
+			         Price: parseInt(item.number*100),
+			         Amount: parseInt(item.otherParam*100),
+			         Tax: "vat10"             
+			        } 
+			      })
+			    }
+			  };
+			}
+		};
+	}());
+
+	$(".addprod").on("click",function(event){
+	    event.preventDefault();
+
+	    var dataOrder = {};
+	    dataOrder['TerminalKey'] = $(this).parents('form').find( "input[name=TerminalKey]" ).val();
+	    dataOrder['Orderid'] = $(this).parents('form').find( "input[name=Orderid]" ).val();
+	    dataOrder['description'] = $(this).parents('form').find( "input.description" ).val();
+	    dataOrder['amount'] = parseInt($(this).parents('form').find( ".amount" ).val());
+	    dataOrder['name'] = $(this).parents('form').find( ".mt-0" ).text();
+	    var receipt = $(this).parents('form').find( "input.receipt" ).val();
+	    dataOrder['receipt'] = parseInt(receipt.replace(/' р.'/g, ''));
+	    
+	    Basket.addToBasket(dataOrder['name'], dataOrder['receipt'],dataOrder['amount']);
+	    $(this).parents('form').find( "button" ).attr('disabled','disabled');
+	    var addProuct = Basket.getRequestBody(dataOrder['Orderid'], dataOrder['TerminalKey'], dataOrder['description']);
+	    return addProuct;
+	});
+
+	$(".secondbtn").on("click",function(event){
+	    event.preventDefault();
+		var terminalkey = $('.addprod').parents('form').find( "input[name=TerminalKey]" ).val();
+		var order = $('.addprod').parents('form').find( "input[name=Orderid]" ).val();
+	    var dataOrder = Basket.getRequestBody(order,terminalkey);
+	    submitForm(dataOrder);
+	});
+
+	</script>
+</body>
+
+</html>
