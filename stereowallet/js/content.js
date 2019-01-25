@@ -50,7 +50,7 @@ var data_ru = 	{	"header":{
 					},
 					"footer":{
 						"text":"Contact",
-						"copyright":"CK GROUP LTD",
+						"copyright":"TCK GROUP LTD",
 						"address":"Cyprus, Limassol, 40 Kimonos 3095",
 						"phone":"+357 25 056 443",
 						"email":"info@sterewallet.com",
@@ -92,7 +92,7 @@ var data_en =	{	"header":{
 					},
 					"footer":{
 						"text":"Контакты",
-						"copyright":"CK GROUP LTD",
+						"copyright":"TCK GROUP LTD",
 						"address":"Cyprus, Limassol, 40 Kimonos 3095",
 						"phone":"+357 25 056 443",
 						"email":"info@sterewallet.com",
