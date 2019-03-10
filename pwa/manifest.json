@@ -1,12 +1,18 @@
 {
-  "name": "Progressive Beer",
-  "short_name": "Progressive Beer",
+  "name": "Beer4you",
+  "short_name": "Beer4you",
   "lang": "en-GB",
   "start_url": "./index.html",
   "display": "fullscreen",
   "theme_color": "#ffe400",
   "background_color": "#ffe400",
   "icons": [
+    {
+      "src": "./images/beer-icon-192.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "density": 1
+    },
     {
       "src": "./images/beer-icon-192.png",
       "sizes": "192x192",
