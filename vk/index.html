@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html> 
+ <head>
+  <script type="text/javascript" src="j2ds/math.js"></script>
+  <script type="text/javascript" src="j2ds/input.js"></script>   
+  <script type="text/javascript" src="j2ds/dom.js"></script>
+  <script type="text/javascript" src="j2ds/j2ds.js"></script>
+  <script type="text/javascript" src="j2ds/post.js"></script>  
+  <script type="text/javascript" src="menu.js"></script>  
+  <script type="text/javascript" src="game.js"></script>    
+   
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width,user-scalable=no" />  
+  <title>Две шкатулки</title>
+ </head>
+
+<body onload="startGame(Menu, 30);">
+<canvas id="iCanvas" width="550" height="300"></canvas>
+
+<script type="text/javascript">
+// Инициализируем сцену
+scene= createScene('iCanvas', '#EED6C6');
+
+// Разворачиваем приложение на весь экран
+scene.fullScreen(true);
+
+// Инициализируем устройство ввода
+initInput(scene);
+
+// Создаем менеджер постэффектов
+post= createPost(scene);
+
+// Создаем меню
+createMenu();
+
+// Создаем игру
+createGame();
+</script>
+
+</body>
+</html>
