@@ -1,0 +1,10 @@
+node_modules/
+coverage
+.DS_Store
+.env
+npm-debug.log
+stats.json
+dist/
+.idea/
+src/styles/generated/
+PUBLISHING.md
